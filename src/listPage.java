@@ -1,9 +1,8 @@
-import java.io.IOException;
-import javax.imageio.ImageIO;
+
 import javax.swing.*; 
 import java.awt.event.*;
 import java.awt.*;
-import java.util.*;
+
 public class listPage implements ActionListener{
             
             private JTextArea textArea;
@@ -43,8 +42,8 @@ public class listPage implements ActionListener{
                     
                     reviewString += " ";
                 }
-                System.out.println(reviewString);
-                textArea.setText(reviewString);
+                
+                textArea.setText(reviewString.substring(0, reviewString.length() -4));
                 listUser = "";
                 reviewString = "";
                 listFrame.setVisible(true);
